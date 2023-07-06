@@ -5,6 +5,7 @@ import 'package:my_wallet/screens/cardScreen.dart';
 import 'package:my_wallet/screens/historyScreen.dart';
 import 'package:my_wallet/screens/home.dart';
 import 'package:my_wallet/screens/profileScreen.dart';
+import 'package:my_wallet/screens/settings.dart';
 
 class HomeWidget extends StatefulWidget {
   @override
@@ -14,12 +15,12 @@ class HomeWidget extends StatefulWidget {
 // Used for Bottom Navigation Bar
 
 class _HomeWidgetState extends State<HomeWidget> {
-  int selectedIndex = 4;
+  int selectedIndex = 2;
   @override
   Widget build(BuildContext context) {
     List<Widget> widgetOptions = <Widget>[
       HistoryScreen(),
-      HomeScreen(),
+      SettingsScreen(),
       HomeScreen(),
       CardScreen(),
       ProfileScreen(),
@@ -35,7 +36,7 @@ class _HomeWidgetState extends State<HomeWidget> {
       body: widgetOptions.elementAt(selectedIndex),
       bottomNavigationBar: CurvedNavigationBar(
 
-        height: 49,
+        height: 55,
         // animationCurve: Curves.,
         backgroundColor: Colors.white,
         color: Colors.greenAccent,

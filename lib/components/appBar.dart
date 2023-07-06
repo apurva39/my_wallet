@@ -3,6 +3,8 @@ import 'package:expandable_search_bar/expandable_search_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../widgets/searchCard.dart';
+
 class Appbar extends StatefulWidget {
 
 
@@ -49,24 +51,26 @@ class _AppbarState extends State<Appbar> {
             ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ExpandableSearchBar(
-                backgroundColor: Colors.white54,
-                width: 300,
-                onTap: () {
-                  print(
-                    searchController!.text.toString(),
-                  );
-                },
-                hintText: "search something",
-                editTextController: searchController,
-              ),
+              SearchCard(),
+              // ExpandableSearchBar(
+              //   backgroundColor: Colors.white54,
+              //   width: 100,
+              //   onTap: () {
+              //     print(
+              //       searchController!.text.toString(),
+              //     );
+              //   },
+              //   hintText: "search something",
+              //   editTextController: searchController,
+              // ),
 
 
-              IconButton(
-                icon: SvgPicture.asset('assets/more-icon.svg'),
-                onPressed: null,
-              )
+              // IconButton(
+              //   icon: SvgPicture.asset('assets/more-icon.svg'),
+              //   onPressed: null,
+              // )
             ],
           )
         ],

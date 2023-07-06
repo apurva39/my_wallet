@@ -41,7 +41,7 @@ class _CardsListState extends State<CardsList> {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-                top: 32.0, left: 15.0, right: 15.0, bottom: 16.0),
+                top: 12.0, left: 15.0, right: 15.0, bottom: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -51,7 +51,7 @@ class _CardsListState extends State<CardsList> {
             ),
           ),
           Container(
-            height: 246.0,
+            height: 230.0,
             child: PageView.builder(
               itemCount: cardList.length,
               scrollDirection: Axis.horizontal,

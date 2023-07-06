@@ -47,7 +47,7 @@ class _CreditCardState extends State<CreditCard> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Magent Black', style: ThemeStyles.cardDetails),
+                    Text('Apurva Anand', style: ThemeStyles.cardDetails),
                     Row(
                       children: [
                         Padding(

@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
 
-            Appbar(),
+            Appbar(title: 'Home'),
             CardsList(),
             RecentTransaction(),
           ],
